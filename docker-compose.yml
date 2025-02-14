@@ -1,0 +1,14 @@
+version: '3'
+services:
+  tileserver-gl:
+    image: maptiler/tileserver-gl:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data
+      - ./config.json:/etc/config.json
+      - ./sprites:/sprites
+    environment:
+      - CORS_ORIGIN=*
+      - CACHE_SIZE=0
+    restart: unless-stopped
