@@ -14,18 +14,6 @@
         }
     },
     "styles": {
-        "basic-style": {
-            "style": "maptiler-basic-gl-style/style.json",
-            "tilejson": {
-                "bounds": [34,28,36,34]
-            }
-        },
-        "bright-style": {
-            "style": "osm-bright-gl-style/style.json",
-            "tilejson": {
-                "bounds": [34,28,36,34]
-            }
-        },
         "custom-style": {
             "style": "custom-style/styles.json",
             "tilejson": {
